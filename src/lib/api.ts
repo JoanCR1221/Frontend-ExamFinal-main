@@ -4,7 +4,7 @@
 // En local suele ser algo como "http://localhost:5000" (revise el puerto que
 // expone su Backend .NET). En producción será la URL pública del API en
 // Monster ASP.NET (Parte 5 del examen).
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 // El controlador .NET con [Route("api/[controller]")] y un FraudController
 // expone la ruta "api/Fraud". Si su controlador usa otro nombre o ruta,
