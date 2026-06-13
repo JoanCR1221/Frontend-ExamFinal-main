@@ -1,10 +1,11 @@
 // Cliente de API para el módulo de reporte de fraudes.
 //
 // La URL base del Backend se lee de la variable de entorno VITE_API_URL.
-// En local suele ser algo como "http://localhost:5000" (revise el puerto que
-// expone su Backend .NET). En producción será la URL pública del API en
-// Monster ASP.NET (Parte 5 del examen).
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+// - En local: defina VITE_API_URL en .env.local (ej. http://localhost:5219).
+// - En Netlify: deje VITE_API_URL vacía. Así API_URL queda "" y las llamadas
+//   van a la ruta relativa "/api/Fraud", que netlify.toml redirige (proxy) al
+//   Backend en runasp.net evitando el bloqueo de contenido mixto (HTTPS->HTTP).
+const API_URL = import.meta.env.VITE_API_URL ?? "";
 
 // El controlador .NET con [Route("api/[controller]")] y un FraudController
 // expone la ruta "api/Fraud". Si su controlador usa otro nombre o ruta,
