@@ -8,7 +8,11 @@
       "Bash(python \"C:\\\\Users\\\\DMUNGUIA\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\fc78c748-f818-476a-94a1-a39a8bfefcc6\\\\2c0ed5b9-e820-4ff1-b287-b4b4878af3df\\\\skills\\\\docx\\\\scripts\\\\office\\\\unpack.py\" ExamenFinal.docx unpacked_exam/)",
       "PowerShell(python3 --version 2>$null)",
       "PowerShell(py --version 2>$null)",
-      "PowerShell(python3.exe --version 2>$null)"
+      "PowerShell(python3.exe --version 2>$null)",
+      "Bash(git add *)",
+      "Bash(git commit -m '@ *)",
+      "Bash(git push *)",
+      "Bash(git commit *)"
     ],
     "deny": [],
     "ask": []
